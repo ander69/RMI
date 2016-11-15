@@ -10,7 +10,7 @@ public class Cliente {
 		String mensaje="";
 		String nombre;
 		try{
-			System.out.println("Introduce tu nombre:");
+			System.out.println("Introduce tu nombre: ");
 			nombre=sc.nextLine();
 			InterfaceServidor obj=(InterfaceServidor) Naming.lookup("//localhost/ObjetoHola");
 			mensaje=obj.saludo(nombre);
