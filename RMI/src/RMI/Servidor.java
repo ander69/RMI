@@ -8,6 +8,10 @@ import java.rmi.server.UnicastRemoteObject;
 public class Servidor extends UnicastRemoteObject implements InterfaceServidor {
 
 	protected Servidor() throws RemoteException{
+		super();
+		
+	}
+	public String saludo(String nombre)throws RemoteException{
 		return "Hola"+nombre;
 	}
 	
